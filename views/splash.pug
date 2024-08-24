@@ -7,8 +7,9 @@ html
     script(src="https://code.jquery.com/jquery-3.1.1.min.js",
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",
       crossorigin="anonymous")
+    script(src='/check_webgpu.js')
     script(src='/splash.js')
   body
     h1(id='intro', class='container')
-      a(href='/v')
+      a(id='bumble_link' href='/v')
         |bumble

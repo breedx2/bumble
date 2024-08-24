@@ -18,8 +18,12 @@ app.get('/v', (req, res) => {
   res.render('main');
 });
 
+app.get('/r', (req, res) => {
+  res.render('main_remix');
+});
+
 app.get('/i', (req, res) => {
-  imageList.random().then(file => res.send(file));
+  imageList.random().then((file) => res.send(file));
 });
 
 app.listen(PORT, 'localhost', function () {
